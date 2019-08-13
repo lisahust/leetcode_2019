@@ -1,4 +1,4 @@
-package leetcode_dfs;
+package Algo_dfs;
 
 public class leetcode79 {
     public static boolean [][] visited = new boolean[200][200];

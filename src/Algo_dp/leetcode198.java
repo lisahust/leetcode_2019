@@ -1,4 +1,4 @@
-package leetcode_dp;
+package Algo_dp;
 
 public class leetcode198 {
     public static int[] dpResult;

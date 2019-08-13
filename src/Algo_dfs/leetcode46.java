@@ -1,4 +1,4 @@
-package leetcode_dfs;
+package Algo_dfs;
 
 public class leetcode46 {
 
