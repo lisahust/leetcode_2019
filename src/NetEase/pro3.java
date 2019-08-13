@@ -1,5 +1,9 @@
 package NetEase;
 
+/**
+ * 网易提前批第三题
+ */
+
 import java.util.*;
 
 public class pro3 {
@@ -14,6 +18,14 @@ public class pro3 {
         int [] arr = new int[n];
         for (int i = 0; i < n; ++i) {
             arr[i] = sc.nextInt();
+        }
+
+        Arrays.sort(arr);
+
+        if (arr[n-1] >= arr[n-2] + arr[n-3]) {
+            System.out.println("no");
+        } else {
+            System.out.println("yes");
         }
 
     }
