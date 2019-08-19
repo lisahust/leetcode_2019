@@ -115,7 +115,34 @@ class Singleton6 {
     }
 }
 
+/**
+ * 借助于 ThreadLocal，我们可以实现双重检查模式的变体。
+ * 借助于 ThreadLocal，我们也可以实现线程安全的懒汉式单例。但与直接双重检查模式使用，使用ThreadLocal的实现在效率上还不如双重检查锁定。
+ */
+class Singleton7{
+    private static ThreadLocal<Singleton7> threadLocal = new ThreadLocal<Singleton7>();
+    private static Singleton7 singleton7 = null;    // 不需要是
 
+    private Singleton7(){}
+
+    public static Singleton7 getSingleton7(){
+        // 第一次检查：该线程是否第一次访问
+        if (threadLocal.get() == null) {
+            createSingleton7();
+        }
+        return singleton7;
+    }
+
+    public static void createSingleton7(){
+        synchronized (Singleton7.class) {
+            if (singleton7 == null) {          // 第二次检查：该单例是否被创建
+                singleton7 = new Singleton7();   // 只执行一次
+            }
+        }
+        threadLocal.set(singleton7);      // 将单例放入当前线程的局部变量中
+    }
+
+}
 
 
 
