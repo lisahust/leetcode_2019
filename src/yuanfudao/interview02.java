@@ -1,4 +1,5 @@
 package yuanfudao;
+import DataStructure.ListNode;
 
 import java.util.LinkedList;
 
@@ -7,11 +8,13 @@ import java.util.LinkedList;
  */
 
 public class interview02 {
-    public void swap (LinkedList list, int index) {
-        LinkedList node = list;
-        for (int i = 0; i < index; ++i) {
-
+    public ListNode swapPairs(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
         }
+        ListNode next = head.next;
+        head.next = swapPairs(next.next);
+        next.next = head;
+        return next;
     }
-
 }

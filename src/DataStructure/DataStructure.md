@@ -1,0 +1,5 @@
+# DataStructure文件夹说明
+
+该文件夹放置数据结构
+可供其他package使用
+所以里面的方法和变量需要变成public
