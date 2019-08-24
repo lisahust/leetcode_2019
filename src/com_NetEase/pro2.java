@@ -1,4 +1,4 @@
-package NetEase;
+package com_NetEase;
 
 /**
  * 网易提前批第2题

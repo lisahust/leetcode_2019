@@ -19,7 +19,6 @@ public class pro4 {
         if (N == 1) {
             System.out.print(0);
         }
-
         if (N == 2) {
             if (arr[0] == arr[1]) {
                 System.out.print(1);

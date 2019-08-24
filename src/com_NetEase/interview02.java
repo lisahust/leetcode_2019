@@ -1,4 +1,4 @@
-package NetEase;
+package com_NetEase;
 
 /**
  * 网易有道一面

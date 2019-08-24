@@ -1,4 +1,4 @@
-package yuanfudao;
+package com_yuanfudao;
 
 import java.util.*;
 
