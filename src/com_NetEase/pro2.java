@@ -2,9 +2,11 @@ package com_NetEase;
 
 /**
  * 网易提前批第2题
+ * 若数组中两数下标和为奇数，则可以交换
  */
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class pro2 {
     public static void main (String [] args) {

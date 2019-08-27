@@ -1,6 +1,21 @@
 package com_yuanfudao;
 
-import java.util.*;
+import java.util.Scanner;
+import java.util.Stack;
+
+/**
+ * 猿辅导提前批第一题
+ * 题目描述：
+ * 猿辅导APP需要下发一些宣传文本给学生，工程师们使用了一种字符压缩算法，为简单起见，假设被罚锁的字符全部为大写字母序列，A, B, C, D … Z，压缩规则如下：
+ * 1. AAAB可以压缩为A3B（单字符压缩不加括号）
+ * 2. ABABA可以压缩为(AB)2A（多字符串压缩才加括号）
+ *
+ * 输入描述：
+ * (AB)3A3
+ *
+ * 输出描述：
+ * ABABABAAA
+ */
 
 public class pro1 {
     public static void main(String[] args) {
