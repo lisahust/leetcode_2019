@@ -248,7 +248,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566875712177" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566875822330" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
@@ -284,11 +284,11 @@
       </method>
     </configuration>
     <configuration name="pro1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="beike.pro1" />
+      <option name="MAIN_CLASS_NAME" value="com_beike.pro1" />
       <module name="IdeaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="beike.*" />
+          <option name="PATTERN" value="com_beike.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -310,11 +310,11 @@
       </method>
     </configuration>
     <configuration name="pro6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="beike.pro6" />
+      <option name="MAIN_CLASS_NAME" value="com_beike.pro6" />
       <module name="IdeaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="beike.*" />
+          <option name="PATTERN" value="com_beike.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -323,11 +323,11 @@
       </method>
     </configuration>
     <configuration name="pro7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="beike.pro7" />
+      <option name="MAIN_CLASS_NAME" value="com_beike.pro7" />
       <module name="IdeaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="beike.*" />
+          <option name="PATTERN" value="com_beike.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
