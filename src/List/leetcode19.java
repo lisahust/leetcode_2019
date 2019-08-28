@@ -1,31 +1,28 @@
 package List;
 
-import java.util.List;
+
+import DataStructure.ListNode;
 
 /**
  * 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。
  */
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) {
-        val = x;
-    }
-}
 
 public class leetcode19 {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if (head == null) {
             return head;
         }
-        int len = 1;
+        int len = 0;
         ListNode p = head;
-        while (p.next != null) {
+        while (p != null) {
             len++;
+            p = p.next;
         }
 
         ListNode delNode = head;
+        if (n == len) {
+            return head.next;
+        }
         for (int i = 0; i < len-n-1; ++i) {
             delNode = delNode.next;
         }
@@ -44,16 +41,18 @@ public class leetcode19 {
             node = node.next;
         }
 
-        while (head.next != null) {
-            System.out.print(head.val);
-            head = head.next;
+        ListNode node2 = head;
+        while (node2 != null) {
+            System.out.print(node2.val);
+            node2 = node2.next;
         }
 
         solution.removeNthFromEnd(head, 2);
 
-        while (head.next != null) {
-            System.out.print(head.val);
-            head = head.next;
+        ListNode node3 = head;
+        while (node3 != null) {
+            System.out.print(node3.val);
+            node3 = node3.next;
         }
     }
 
