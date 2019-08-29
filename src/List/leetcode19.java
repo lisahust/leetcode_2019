@@ -8,6 +8,12 @@ import DataStructure.ListNode;
  */
 
 public class leetcode19 {
+    /**
+     * 该方法遍历了两遍
+     * @param head
+     * @param n
+     * @return
+     */
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if (head == null) {
             return head;
@@ -28,6 +34,39 @@ public class leetcode19 {
         }
         delNode.next = delNode.next.next;
         return head;
+    }
+
+    /**
+     * 用两个指针一次遍历
+     * @param head
+     * @param n
+     * @return
+     */
+    public ListNode removeNthFromEnd2(ListNode head, int n) {
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+
+        if(head.next == null) {
+            return null;
+        }
+
+        ListNode node1 = dummy;
+        ListNode node2 = dummy;
+        for(int i = 0; i < n; ++i) {
+            node2 = node2.next;
+        }
+        while(node2.next != null) {
+            node1 = node1.next;
+            node2 = node2.next;
+        }
+
+        if(n == 1) {
+            node1.next = null;
+        } else {
+            node1.next = node1.next.next;
+        }
+
+        return dummy.next;
     }
 
     public static void main(String [] args) {
